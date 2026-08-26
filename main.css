@@ -1,0 +1,760 @@
+/*待合并旧代码 */
+/* LAYOUT */
+
+#container {
+	margin: 0 0;
+}
+
+#header{
+	height: 9em;
+	border-bottom: 3px solid #707080;
+	background-repeat: repeat-x;
+	background-position: 0 2.1em; 
+}
+
+
+#header h1{
+	margin: 0 auto 0 10px;
+	padding-top: 0.9em;
+	text-align: center;
+	width: 650px;
+	font-size: 3em;
+	border: none;
+	font-family: Verdana,"Trebuchet MS";
+}
+#header h1 a{
+	color: #020280;
+}
+#header h1 a:hover{
+	background: none;
+}
+
+#header h2{
+	margin: 0 auto 0 10px;
+	text-align: center;
+	width: 650px;
+	font-size: 1.5em;
+	color: #666;
+}
+
+#header-extra-div-1{
+	position: absolute;
+	top:0; left:0; right:0;
+	width: 100%;
+	height: 2em;
+	background-color: #707080;
+}
+#header #login-status, #login-status a {
+	color: #EEE;
+	font-weight:bold;
+}
+
+#account-options a,#account-options, a#account-topbutton{
+	color: #333;
+	font-weight: normal;
+}
+
+#login-status{
+	top: 3px;
+}
+
+#login-status .printuser a{
+	display:none;
+}
+#login-status a:hover{
+	background-color: #A0A0B2;
+}
+#account-options a:hover{
+	background-color: #EEE;
+}	
+
+#top-bar{
+	right: 10em;
+}
+
+
+#content-wrap{
+	margin: 1em 2em;
+}
+
+#side-bar{
+	background-color: #F0F0F5;
+	border-top: 1px solid #797980;
+	border-bottom: 1px solid #797980;
+
+}
+
+#side-bar h1, #side-bar h2,#side-bar h3{
+	/*border-top: 1px dotted #777;*/
+	border-bottom: 1px dotted #777;
+}  
+
+#side-bar h1{
+	font-size: 170%;
+}
+#side-bar h2{
+	font-size: 150%;
+}
+#side-bar h3{
+	font-size: 120%;
+}
+
+#side-bar a:hover{
+	background-color: #FFF;
+}
+
+#side-bar ul{
+	display: block;
+	padding: 0;
+	list-style: none;
+}
+#side-bar ul li{
+	display:block;
+}
+#side-bar ul li a{
+	display:block;
+}
+
+/* bottom elements */
+#page-info{
+	color: #555;
+}
+
+
+/* footer */ 
+/*
+#footer{
+	background-color: #DDD;
+}
+
+#footer .options a{
+	color: #844;
+}
+*/
+
+#footer{
+	background-color: #707080;
+	color: #EEE;
+}
+
+#footer a{
+	color: #EEF;
+}
+#footer a:hover{
+	background-color: #669;
+}
+
+
+/* ELEMENTS */
+
+body{
+	color: #222;
+}
+
+h1, h2, h3, h4, h5, h6, #page-title{
+	/*font-family: "Palatino","Palatino Linotype", serif;*/
+	font-family: Georgia, "Times New Roman", times, serif;
+}
+
+#page-title{
+	color: #040450;
+	font-size: 220%;
+}
+
+h1,h2,h3{
+	color: #444;
+}
+
+h1{
+	border-bottom: 1px dotted #AAA;
+}
+
+a{
+	color: #030390;
+}
+a.newpage{
+	color: #888;
+}
+
+
+/*
+a.newpage{
+	background-color: #BB8888;
+	padding: 0 2px;
+	color: #FFF;
+}
+a.newpage:hover{
+	background-color: #090930;
+}
+*/
+/* INTERFACE ETC. */
+
+.page-options-bottom a{
+	color: #224;
+	background-color: #EEE;
+	text-decoration: none;
+}
+.page-options-bottom a:hover{
+	background-color: #DDD;
+}
+
+a.action-area-close{
+	color: #224;
+	background-color: #EEE;
+	text-decoration: none;
+}
+
+div.buttons input, input.button, button, file, a.button, .owindow .button-bar a{
+	background-color: #F4F4F4;
+	border: 1px solid #AAA;
+	color: #020250;
+}
+div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owindow .button-bar a:hover{
+	background-color: #DDD;
+	color: #020250;
+}
+
+.owindow .title{
+	background-color: #E3E3EA;
+}
+
+/* FORUM COLORS */
+
+.forum-group div.head{
+	background-color: #727280;
+	color: #FFF;
+}
+
+.thread-container .post .options a{
+	color: #727290;
+}
+
+.thread-container .post  .long  .changes a {
+	color: #727290;
+}
+.thread-container .post  .short  .options{
+	color: #727290;
+}
+
+/*版式由OxygenNine设计*/
+
+/*这个字体加载太慢了，整个网站加载速度因此变慢了，先注释掉试试 -浮云*/
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
+@import url('https://netboard.wikidot.com/local--files/css/MontserratAlternates-SemiBold.otf');
+ 
+:root {
+    --themeColor:#0039E6;
+    --lightColor:#E2E2E2;
+    --lighterColor:#F2F2F2;
+    --exLighterColor:#FFFFFF;
+    --darkColor:#222222;
+    --darkerColor:#A9A9A9;
+    --exDarkerColor:#000000;
+}
+ 
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color:var(--lightColor);
+}
+ 
+#main-content {
+    padding: 0px 1.08em;
+    background: var(--lighterColor);
+    border: solid 2px #bfbfbf;
+    box-shadow: 1px 5px 10px rgb(0 0 0 / 20%);
+}
+ 
+#page-title {
+    color: var(--darkColor);
+    font-size: 240%;
+    font-family: '思源黑体';
+    font-weight: 900;
+    border-bottom: solid 2px #CCC;
+    padding-bottom: 0.2em;
+}
+ 
+#page-title::before {
+   color:var(--themeColor);
+   animation:c-blink 1.3s infinite;
+   content:'>';
+}
+ 
+@keyframes c-blink {
+0% {}
+50% {color: transparent;}
+100% {}
+}
+ 
+div#main-content div.nav-computer>div {
+    float: right;
+    width: fit-content ;
+    padding: 0 1em ;
+    margin: 1em 0 1em 1em ;
+    border-left: none ;
+    background-color: var(--lighterColor) ;
+    border-right: solid 3px #BBB ;
+    position: relative ;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 20%) ;
+}
+ 
+#side-bar {
+    background-color: var(--lighterColor);
+    border-top: 5px solid var(--darkerColor);
+    border-bottom: 5px solid var(--darkerColor);
+    top: 20px ;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+}
+ 
+a {
+    color: var(--themeColor);
+    text-decoration: none;
+    transition: color 0.3s, background 0.3s;
+}
+ 
+a:hover {
+    color: white;
+    background-color: var(--themeColor) ;
+}
+ 
+h1,h2,h3,h4,h5,h6 {
+    font-family: '思源黑体';
+    font-weight: 900;
+}
+ 
+.page-rate-widget-box .rate-points {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    padding:0px 6px;
+    -moz-border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0px 0px 8px;
+}
+ 
+.page-rate-widget-box .cancel, .page-rate-widget-box .cancel a {
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0px 8px 8px 0px;
+    background: #c4c4c4;
+}
+ 
+.page-rate-widget-box {filter: drop-shadow(6px 2px 4px rgba(0,0,0,0.2)); }
+ 
+span.rateup a:hover {background:#00E639 ;}
+span.ratedown a:hover {background:#E60039 ;}
+ 
+#header h1 a {
+    color: var(--themeColor);
+    font-family: 'Montserrat';
+    transition:font-size 0.4s;
+}
+ 
+#header h1 {
+    position: relative;
+    margin: 0 auto;
+}
+ 
+#header h2 {
+    margin: 0 auto 0 10px;
+    text-align: center;
+    width: 650px;
+    font-size: 1.5em;
+    color: var(--darkColor);
+    font-family: 'Consolas';
+    position: relative;
+    margin: 0 auto;
+}
+ 
+#header h1 a:hover {
+   background:none ;
+   color:var(--themeColor);
+   font-size:120%;
+}
+ 
+#header {
+    background: none ;
+    background-size: 6rem;
+}
+ 
+div#extra-div-1 {
+    height: 134px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: url(https://netboard.wikidot.com/local--files/css/netboard);
+    background-size: 7em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -6;
+    opacity: 0.25;
+}
+ 
+#header-extra-div-1, #footer {
+    background-image: linear-gradient(45deg, var(--themeColor), color-mix(in srgb , var(--themeColor),white 40%));
+}
+ 
+.buttons .btn {
+    width: 7em;
+    display: inline;
+}
+ 
+div.buttons.alignleft {
+    text-align: center;
+}
+ 
+.page-options-bottom {
+    margin: 4px 0;
+    text-align: right;
+    height: 1%;
+    line-height: 230%;
+}
+ 
+/* comments */
+ 
+div.post-container {
+    margin-top: 1em;
+    border-left: solid 3px var(--lightColor);
+}
+ 
+.thread-container .post .head {
+    padding: 0.5em 0.9em;
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+    border-radius: 1em;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+}
+ 
+.thread-container .post {
+    padding: 10px 0px 10px 8px;
+    width: 99%;
+    margin-top: 0.3em;
+}
+ 
+#thread-container-posts {border-
+top: dashed 4px var(--themeColor);}
+ 
+
+
+
+/*修改*/
+input#edit-page-title {
+    max-width: 70vw;
+}
+
+#header h1 , #header h2 {width: auto;}
+
+.yui-nav li a {
+    transition: none;
+}
+#top-bar ul li a:hover {
+    background-color: var(--themeColor);
+}
+#side-bar a:hover {
+    background-color: var(--themeColor);
+}
+
+#side-bar ul li.folded > a::after {
+    content: "▾";
+
+}
+#side-bar ul li.unfolded > a::after {
+    content: "▴";
+}
+/*滚动条(仅限chrome内核)*/
+::-webkit-scrollbar{
+    width: 3px;
+    height:6px;
+    background-color: var(--lighterColor);
+}
+::-webkit-scrollbar:hover{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    min-height:5px;min-width:5px;
+    -webkit-border-radius:20px;
+    border: 1px solid color-mix(in srgb,var(--themeColor),black 10%);
+    background-color: color-mix(in srgb,var(--themeColor),white 20%);
+}
+::-webkit-scrollbar-thumb:hover{
+min-height:4px;
+min-width:4px;
+-webkit-border-radius:20px;
+background-color: var(--themeColor);
+}
+::-webkit-scrollbar-thumb:active{
+-webkit-border-radius:20px;
+background-color: color-mix(in srgb,var(--themeColor),black 20%);
+}
+
+/* 反馈区的标签*/
+.tag {
+    padding: 0 5px 0 5px;
+    border: solid,1.5px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 0px 2px 0px;
+    text-shadow: 0px 0px 1px;
+}
+
+.tag p{
+    margin: 0 0px 0 0px;
+}
+/* 小提示默认样式 */
+.tip {
+    width: fit-content;
+    height: auto;
+    border-style: dashed;
+    border-color: var(--lightColor);
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    overflow: auto  !important;
+    text-align: center;
+    max-width: 200px !important;
+    max-height: 100px !important;
+}
+.tip *{
+    margin:0 0 0 0;
+    position:relative !important;
+}
+/* 维基点用户信息修复 */
+span.no-user {
+    display:none;
+}
+span.no-user-text{
+    display:unset !important;
+}
+
+/* 仿键盘样式 */
+.keyboard {
+    border-style: outset;
+    border-color: var(--lightColor);
+    background-color: var(--lighterColor);
+    border-width: 2px 2px 3px 2px;
+    border-radius: 3px;
+    display: inline-block;
+    min-width: 14px;
+    padding: 0 3px;
+    text-align: center;
+    transition: background-color 0.2s;
+    width: fit-content;
+    height: fit-content;
+}
+
+.keyboard:hover{
+    border-style:inset;
+    background-color: var(--lightColor);
+    transition: background-color 0.2s;
+}
+
+.keyboard a:hover{
+    color:unset;
+    background:unset;
+}
+
+.keyboard a{
+    color:unset;
+    background:unset;
+}
+
+/* 分端显示 和适配*/
+@media (min-width: 767px) {
+.c * {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+.p * {
+    display: none;
+  }
+#top-bar{
+	right: 0px;
+  }
+.owindow table td {
+        display: table-row;
+        word-break: break-word;
+    }
+
+.owindow {
+    max-height: 80%;
+    left: 10% !important;
+    width: 80% !important;
+    overflow-x: hidden;
+   }
+
+.owindow h1 {
+    display: block;
+    width: 100%;
+
+   }
+
+.owindow .content>img{
+    display: block;
+    float: unset !important;
+   }
+.owindow .button-bar {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    }
+}
+
+/* 从 css-side 页面合并 */
+#header h1, #header h2 {
+    width: auto;
+}
+
+#side-bar li ul {
+    border-left: 5px;
+    margin-top: auto;
+    border-color: var(--lightColor);
+    padding-left: 3px;
+    border-left-style: solid;
+}
+#top-bar .nav-phone p {
+    height: 0px;
+    margin: 0px;
+}
+
+@media (min-width: 767px) {
+#side-bar {
+    position: sticky;
+    top: 0px;
+    max-height: calc(100vh);
+    overflow-y: auto;
+    }
+}
+
+@media (max-width: 767px) {
+#top-bar li ul {
+    position: absolute;
+    right: unset;
+ }
+#top-bar ul:first-of-type :is(li:nth-last-of-type(1), li:nth-last-of-type(2)) ul {
+    position: absolute;
+    right: 0px;
+ }
+
+#top-bar {
+    width: 100%;
+   }
+#search-top-box {
+    position: absolute;
+    left: 0em;
+    top: 3px;
+    z-index: 10;
+    }
+#side-bar {
+    top: 0;
+    overflow:auto;
+    width: 100%;
+   }
+
+#header {
+    height:140px;
+ }
+
+#top-bar ul {
+    float: right;
+
+ }
+#content-wrap {
+    margin-left: 0em;
+    margin-right: 0em;
+    max-width:100%;
+ }
+#page-version-info {
+    max-width: 98%;
+    height:200%
+ }
+  #top-bar .open-side {
+        position: fixed;
+        top: 3rem;
+        left: 1rem;
+        border: 2px solid var(--darkerColor , #a9a9a9);
+        border-radius: 45%;
+        backdrop-filter: brightness(1.1) blur(1px);
+        font-weight: 900;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    #top-bar .open-side a{
+        display: block;
+        height: 40px;
+        width: 40px;
+        font-size:25px;
+        color: color-mix(in srgb, var(--themeColor , navy) 85%, transparent);
+    }
+     #top-bar .open-side a:hover{
+        background-color: unset;
+        text-decoration: none;
+         color: var(--themeColor);
+    }
+    #top-bar:target .open-side {
+    left: -5rem;
+    }
+    #top-bar .open-side:hover{
+        background-color: unset;
+        backdrop-filter: brightness(3)  blur(2px);
+        text-decoration: none;
+    }
+    .open-side br{
+        display:none
+    }
+
+    #side-bar:target a.close-menu {
+    left: calc(50% + 25px);
+    padding-right: 50%;
+    transition: left 0.5s ease, padding-right 1s;
+    }
+    #side-bar a.close-menu {
+        top: 0;
+        text-align: center;
+        padding: 40vh 0 60vh;
+        backdrop-filter: brightness(0.9) blur(2px);
+        position: fixed;
+        left:-4em;
+        transition:left 0.25s,padding-right 0.4s;
+    }
+    #side-bar a.close-menu span {
+    position: absolute;
+    left: -13px;
+    opacity: 0.7;
+    }
+
+    #side-bar a.close-menu:hover {
+    background-color:unset;
+    color: var(--themeColor);
+    backdrop-filter: brightness(0.95)  blur(1px);
+    }
+#side-bar:target {
+    display: block;
+    left: 0;
+    width: 50%;
+    z-index: 30;
+    background-size:contain;
+    }
+#main-content{
+    margin-left:0px
+    }
+#side-bar {
+    position: fixed;
+    top: 0;
+    left: -37em;
+    width: 17em;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 30;
+    transition: left 0.5s
+    }
+}
+
+
+.close-menu img {
+    display: none;
+}
+
+#action-area .page-source, #recent-posts-container .post .content {
+    overflow-wrap: break-word; 
+    word-break: break-word;
+}

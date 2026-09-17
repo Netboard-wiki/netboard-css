@@ -761,3 +761,6 @@ span.no-user-text{
 body {
     word-break: break-all;
 }
+form{
+    word-break: auto-phrase;
+}

@@ -759,7 +759,8 @@ span.no-user-text{
     word-break: break-word;
 }
 body {
-    word-break: break-all;
+    overflow-wrap: break-word;
+	word-break: break-word;
 }
 form{
     word-break: auto-phrase;

@@ -595,7 +595,7 @@ span.no-user-text{
     top: -5px;
     right: -20px;
     }
-#action-area :is(tr,tbody,table,td,textarea) {
+#edit-page-form :is(tr,tbody,table,td,textarea) {
     display: block;
     max-width: 100%;
 }

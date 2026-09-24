@@ -595,6 +595,10 @@ span.no-user-text{
     top: -5px;
     right: -20px;
     }
+#action-area :is(tr,tbody,table,td,textarea) {
+    display: block;
+    max-width: 100%;
+}
 }
 
 /* 从 css-side 页面合并 */

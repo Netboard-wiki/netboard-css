@@ -149,6 +149,10 @@
 
 body{
 	color: #222;
+	font-family: 'Noto Sans SC', sans-serif;
+    background-color:var(--lightColor);
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6, #page-title{
@@ -252,10 +256,6 @@ div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owi
     --exDarkerColor:#000000;
 }
  
-body {
-    font-family: 'Noto Sans SC', sans-serif;
-    background-color:var(--lightColor);
-}
  
 #main-content {
     padding: 0px 1.08em;
@@ -460,27 +460,24 @@ input#edit-page-title {
 }
 /*滚动条(仅限chrome内核)*/
 ::-webkit-scrollbar{
-    width: 3px;
-    height:6px;
+    width: 4px;
     background-color: var(--lighterColor);
 }
-::-webkit-scrollbar:hover{
-    width:10px;
-}
 ::-webkit-scrollbar-thumb{
-    min-height:5px;min-width:5px;
-    -webkit-border-radius:20px;
+    min-height:5px;
+	min-width:5px;
+    border-radius:20px;
     border: 1px solid color-mix(in srgb,var(--themeColor),black 10%);
     background-color: color-mix(in srgb,var(--themeColor),white 20%);
 }
 ::-webkit-scrollbar-thumb:hover{
 min-height:4px;
 min-width:4px;
--webkit-border-radius:20px;
+border-radius:20px;
 background-color: var(--themeColor);
 }
 ::-webkit-scrollbar-thumb:active{
--webkit-border-radius:20px;
+border-radius:20px;
 background-color: color-mix(in srgb,var(--themeColor),black 20%);
 }
 
@@ -510,6 +507,9 @@ background-color: color-mix(in srgb,var(--themeColor),black 20%);
     text-align: center;
     max-width: 200px !important;
     max-height: 100px !important;
+}
+.tip::-webkit-scrollbar{
+    width: 3px;
 }
 .tip *{
     margin:0 0 0 0;
@@ -761,10 +761,6 @@ span.no-user-text{
 #action-area .page-source, #recent-posts-container .post .content {
     overflow-wrap: break-word; 
     word-break: break-word;
-}
-body {
-    overflow-wrap: break-word;
-	word-break: break-word;
 }
 form{
     word-break: auto-phrase;

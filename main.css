@@ -148,7 +148,7 @@
 /* ELEMENTS */
 
 body{
-	color: #222;
+	color: #color:var(--textColor);
 	font-family: 'Noto Sans SC', sans-serif;
     background-color:var(--lightColor);
 	overflow-wrap: break-word;
@@ -254,6 +254,7 @@ div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owi
     --darkColor:#222222;
     --darkerColor:#A9A9A9;
     --exDarkerColor:#000000;
+	--textColor:#222;
 }
  
  
@@ -753,7 +754,6 @@ span.no-user-text{
     }
 }
 
-
 .close-menu img {
     display: none;
 }
@@ -765,3 +765,41 @@ span.no-user-text{
 form{
     word-break: auto-phrase;
 }
+
+.button,.page-options-bottom .btn {
+    border: solid var(--darkerColor) 0.1px;
+    border-radius: 1em;
+    padding: 0px 5px;
+    box-shadow: 0px 1px 3px var(--darkerColor),0px -1px 3px var(--exLighterColor);
+}
+body,h1, h2, h3,.hl-code,.hl-identifier,.hl-brackets{
+    color:var(--textColor);
+}
+input#np-title,input.text,textarea , blockquote,.code {
+    background-color: var(--exLighterColor);
+}
+.hl-special,.hl-string {
+    color: var(--darkColor);
+}
+ 
+.page-options-bottom a,div.buttons input, input.button, button, file, a.button, .owindow .button-bar a {
+    background-color: var(--exLighterColor);
+    color: var(--themeColor);
+}
+ 
+.page-options-bottom a:hover,div.buttons input:hover, input.button:hover, button:hover, a.button:hover, .owindow .button-bar a:hover {
+    color: var(--themeColor);
+}
+ 
+div#discuss-button-hovertip {
+    background: var(--exLighterColor);
+}
+ 
+.owindow .title {
+    background: var(--exLighterColor);
+}
+ 
+.owindow {
+    background: var(--lightColor);
+}
+

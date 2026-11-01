@@ -773,7 +773,7 @@ form{
     box-shadow: 0px 1px 3px var(--darkerColor),0px -1px 3px var(--exLighterColor);
 }
 body,h1, h2, h3,.hl-code,.hl-identifier,.hl-brackets{
-    color:var(--textColor);
+    /* color:var(--textColor); */
 }
 input#np-title,input.text,textarea , blockquote,.code {
     background-color: var(--exLighterColor);

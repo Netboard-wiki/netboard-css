@@ -93,7 +93,7 @@
 /* ELEMENTS */
 
 body{
-	color: color:var(--textColor);
+	color: var(--textColor);
 	font-family: 'Noto Sans SC', sans-serif;
 	background-color:var(--lightColor);
 	overflow-wrap: break-word;

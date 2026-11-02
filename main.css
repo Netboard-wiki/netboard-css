@@ -5,44 +5,13 @@
 	margin: 0 0;
 }
 
-#header{
-	height: 9em;
-	border-bottom: 3px solid #707080;
-	background-repeat: repeat-x;
-	background-position: 0 2.1em; 
-}
-
-
-#header h1{
-	margin: 0 auto 0 10px;
-	padding-top: 0.9em;
-	text-align: center;
-	width: 650px;
-	font-size: 3em;
-	border: none;
-	font-family: Verdana,"Trebuchet MS";
-}
-#header h1 a{
-	color: #020280;
-}
-#header h1 a:hover{
-	background: none;
-}
-
-#header h2{
-	margin: 0 auto 0 10px;
-	text-align: center;
-	width: 650px;
-	font-size: 1.5em;
-	color: #666;
-}
-
 #header-extra-div-1{
 	position: absolute;
-	top:0; left:0; right:0;
+	top:0;
+	left:0;
+	right:0;
 	width: 100%;
 	height: 2em;
-	background-color: #707080;
 }
 #header #login-status, #login-status a {
 	color: #EEE;
@@ -77,15 +46,7 @@
 	margin: 1em 2em;
 }
 
-#side-bar{
-	background-color: #F0F0F5;
-	border-top: 1px solid #797980;
-	border-bottom: 1px solid #797980;
-
-}
-
 #side-bar h1, #side-bar h2,#side-bar h3{
-	/*border-top: 1px dotted #777;*/
 	border-bottom: 1px dotted #777;
 }  
 
@@ -97,10 +58,6 @@
 }
 #side-bar h3{
 	font-size: 120%;
-}
-
-#side-bar a:hover{
-	background-color: #FFF;
 }
 
 #side-bar ul{
@@ -120,18 +77,6 @@
 	color: #555;
 }
 
-
-/* footer */ 
-/*
-#footer{
-	background-color: #DDD;
-}
-
-#footer .options a{
-	color: #844;
-}
-*/
-
 #footer{
 	background-color: #707080;
 	color: #EEE;
@@ -148,17 +93,13 @@
 /* ELEMENTS */
 
 body{
-	color: #color:var(--textColor);
+	color: color:var(--textColor);
 	font-family: 'Noto Sans SC', sans-serif;
-    background-color:var(--lightColor);
+	background-color:var(--lightColor);
 	overflow-wrap: break-word;
 	word-break: break-word;
 }
 
-h1, h2, h3, h4, h5, h6, #page-title{
-	/*font-family: "Palatino","Palatino Linotype", serif;*/
-	font-family: Georgia, "Times New Roman", times, serif;
-}
 
 #page-title{
 	color: #040450;
@@ -166,36 +107,21 @@ h1, h2, h3, h4, h5, h6, #page-title{
 }
 
 h1,h2,h3{
-	color: #444;
+	color: var(--titleColor);
 }
 
 h1{
 	border-bottom: 1px dotted #AAA;
 }
 
-a{
-	color: #030390;
-}
 a.newpage{
 	color: #888;
 }
 
 
-/*
-a.newpage{
-	background-color: #BB8888;
-	padding: 0 2px;
-	color: #FFF;
-}
-a.newpage:hover{
-	background-color: #090930;
-}
-*/
 /* INTERFACE ETC. */
 
 .page-options-bottom a{
-	color: #224;
-	background-color: #EEE;
 	text-decoration: none;
 }
 .page-options-bottom a:hover{
@@ -219,7 +145,7 @@ div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owi
 }
 
 .owindow .title{
-	background-color: #E3E3EA;
+	background-color: var(--exLighterColor);
 }
 
 /* FORUM COLORS */
@@ -242,19 +168,18 @@ div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owi
 
 /*版式由OxygenNine设计*/
 
-/*这个字体加载太慢了，整个网站加载速度因此变慢了，先注释掉试试 -浮云*/
-/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');*/
 @import url('https://netboard.wikidot.com/local--files/css/MontserratAlternates-SemiBold.otf');
  
 :root {
     --themeColor:#0039E6;
     --lightColor:#E2E2E2;
     --lighterColor:#F2F2F2;
-    --exLighterColor:#FFFFFF;
-    --darkColor:#222222;
+    --exLighterColor:#FFF;
+    --darkColor:#222;
     --darkerColor:#A9A9A9;
-    --exDarkerColor:#000000;
+    --exDarkerColor:#000;
 	--textColor:#222;
+	--titleColor:#444;
 }
  
  
@@ -349,30 +274,32 @@ span.ratedown a:hover {background:#E60039 ;}
 }
  
 #header h1 {
+	padding-top: 0.9em;
+	text-align: center;
+	font-size: 3em;
+	border: none;
     position: relative;
     margin: 0 auto;
 }
  
 #header h2 {
-    margin: 0 auto 0 10px;
     text-align: center;
-    width: 650px;
     font-size: 1.5em;
     color: var(--darkColor);
     font-family: 'Consolas';
-    position: relative;
-    margin: 0 auto;
 }
  
 #header h1 a:hover {
-   background:none ;
+   background:none;
    color:var(--themeColor);
    font-size:120%;
 }
  
 #header {
-    background: none ;
+    background: none;
     background-size: 6rem;
+	height: 9em;
+	border-bottom: 3px solid #707080;
 }
  
 div#extra-div-1 {
@@ -440,7 +367,9 @@ input#edit-page-title {
     max-width: 70vw;
 }
 
-#header h1 , #header h2 {width: auto;}
+#header h1 , #header h2 {
+	width: auto;
+}
 
 .yui-nav li a {
     transition: none;
@@ -603,10 +532,6 @@ span.no-user-text{
 }
 
 /* 从 css-side 页面合并 */
-#header h1, #header h2 {
-    width: auto;
-}
-
 #side-bar li ul {
     border-left: 5px;
     margin-top: auto;
@@ -772,9 +697,10 @@ form{
     padding: 0px 5px;
     box-shadow: 0px 1px 3px var(--darkerColor),0px -1px 3px var(--exLighterColor);
 }
-body,h1, h2, h3,.hl-code,.hl-identifier,.hl-brackets{
+ .hl-code, .hl-identifier, .hl-brackets{
     color:var(--textColor);
 }
+
 input#np-title,input.text,textarea , blockquote,.code {
     background-color: var(--exLighterColor);
 }
@@ -795,11 +721,7 @@ div#discuss-button-hovertip {
     background: var(--exLighterColor);
 }
  
-.owindow .title {
-    background: var(--exLighterColor);
-}
  
 .owindow {
     background: var(--lightColor);
 }
-

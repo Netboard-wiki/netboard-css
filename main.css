@@ -1,6 +1,8 @@
 /*待合并旧代码 */
 /* LAYOUT */
-
+#page-info-break {
+    clear: inline-end;
+}
 #container {
 	margin: 0 0;
 }

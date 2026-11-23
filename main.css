@@ -147,7 +147,7 @@ div.buttons input:hover, input.button:hover, button:hover,  a.button:hover, .owi
 }
 
 .owindow .title{
-	background-color: var(--exLighterColor);
+	background-color: var(--lighterColor);
 }
 
 /* FORUM COLORS */
@@ -725,5 +725,5 @@ div#discuss-button-hovertip {
  
  
 .owindow {
-    background: var(--lightColor);
+    background: var(--exLighterColor);
 }

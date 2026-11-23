@@ -699,7 +699,7 @@ form{
     padding: 0px 5px;
     box-shadow: 0px 1px 3px var(--darkerColor),0px -1px 3px var(--exLighterColor);
 }
- .hl-code, .hl-identifier, .hl-brackets{
+ .hl-code, .hl-identifier, .hl-brackets,textarea,input.text{
     color:var(--textColor);
 }
 

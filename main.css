@@ -531,8 +531,8 @@ span.no-user-text{
     display: block;
     max-width: 100%;
 }
-	html:not(:has(.side-default .self-side-exist>*:first-child)) .open-side{
-    display:none;
+	#container:not(:has(#side-bar .self-side-exist>*:first-child)) .open-side {
+    	display: none;
 	}
 }
 

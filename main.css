@@ -531,6 +531,9 @@ span.no-user-text{
     display: block;
     max-width: 100%;
 }
+	html:not(:has(.side-default .self-side-exist>*:first-child)) .open-side{
+    display:none;
+	}
 }
 
 /* 从 css-side 页面合并 */
